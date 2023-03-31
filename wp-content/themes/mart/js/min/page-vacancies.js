@@ -1,0 +1,1 @@
+(function(){var animationElements=querySelectorAsArray('.onload-animation');var onloadAnimationStep=150;window.pageOnLoadAnimationCallback=function(){animateElements(animationElements,onloadAnimationStep);};window.pageOnLoadAnimationTimeout=(animationElements.length+1)*onloadAnimationStep;})();

@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 100;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Xw9aX8.ttf)
+          format("truetype");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCs16Hw9aX8.ttf)
+          format("truetype");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw9aX8.ttf)
+          format("truetype");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw9aX8.ttf)
+          format("truetype");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w9aX8.ttf)
+          format("truetype");
+      }
+      @font-face {
+        font-display: swap;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 900;
+        src: url(../s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvC73w9aX8.ttf)
+          format("truetype");
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../wp-content/themes/mart/images/favicons/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="../wp-content/themes/mart/images/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../wp-content/themes/mart/images/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../wp-content/themes/mart/images/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../wp-content/themes/mart/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../wp-content/themes/mart/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../wp-content/themes/mart/images/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content='MARS' />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    
+    <meta name="theme-color" content="#1a1a1a" />
+    <link
+      rel="manifest"
+      href="../wp-content/themes/mart/manifest.json?1561623178"
+    />
+    <style>
+      @keyframes preloader-out {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(100%, 0);
+        }
+      }
+      #preloader {
+        position: fixed;
+        display: -ms-flexbox;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        z-index: 10001;
+      }
+      #preloader .preloader-content {
+        position: relative;
+        margin: auto;
+        width: 173px;
+        height: 85px;
+        transition: opacity 0.2s;
+        overflow: hidden;
+      }
+      #preloader .preloader-content::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        position: relative;
+        z-index: 1;
+        opacity: 0.5;
+        transform: translate(0, 0);
+        transition: transform 0.5s;
+      }
+      #preloader .preloader-content svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: #fff;
+      }
+      #preloader.loaded {
+        animation: preloader-out 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+          forwards;
+      }
+      #preloader.loaded .preloader-content {
+        opacity: 0;
+      }
+      #preloader.loading .preloader-content::before {
+        transform: translate(100%, 0);
+      }
+      #preloader-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 10000;
+      }
+      #preloader-bg.loaded {
+        animation: preloader-out 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.1s
+          forwards;
+      }
+    </style>
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="alternate" href="index.htm" hreflang="ru" />
+   
+    <title>Контакты MARS, Казахстан, Алматы</title>
+   
+    <link rel="canonical" href="index.htm" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Контакты MARS" />
+    
+    <meta property="og:site_name" content="MARS" />
+  
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/jpeg" />
+    
+    
+   
+
+    <link
+      rel="stylesheet"
+      id="bundle-css"
+      href="../wp-content/themes/mart/css/bundle.css?1632390356"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="page-contacts-css"
+      href="../wp-content/themes/mart/css/page-contacts.css?1561623179"
+      type="text/css"
+      media="all"
+    />
+    <link rel="shortlink" href="index.htm?p=22" />
+    
+  </head>
+  <body data-template-uri="wp-content/themes/mart">
+   
+    <div id="preloader">
+      <img
+          srs="../logo.png"
+          xml:space="preserve"
+          width="94.6432mm"
+          height="46.809mm"
+          style="
+            shape-rendering: geometricPrecision;
+            text-rendering: geometricPrecision;
+            image-rendering: optimizeQuality;
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+          "
+          viewbox="0 0 100.233 49.5736"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+    </div>
+    <div id="preloader-bg"></div>
+    <script>
+      if (sessionStorage.getItem("firstEnter")) {
+        document.getElementById("preloader-content").style.display = "none";
+      }
+      document.getElementById("preloader").classList.add("loading");
+      sessionStorage.setItem("firstEnter", true);
+    </script>
+    <header id="header">
+      <a
+        href="../index.htm"
+        aria-label="Logo"
+        class="logo from-left-opacity-animation"
+        ><img
+          src="../logo.png"
+          xml:space="preserve"
+          width="94.6432mm"
+          height="46.809mm"
+          style="
+            shape-rendering: geometricPrecision;
+            text-rendering: geometricPrecision;
+            image-rendering: optimizeQuality;
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+          "
+          viewbox="0 0 100.233 49.5736"
+          
+        >
+          </img
+      ></a>
+      <div
+        class="contact button contact-btn contact-btn-1 from-left-opacity-animation"
+        data-modal-id="menu-modal-form"
+      >
+        <span class="desctop-info">Оставить заявку</span>
+        <span class="mobile-info">Заявка</span>
+      </div>
+      <div
+        class="contact button contact-btn contact-btn-2"
+        data-modal-id="menu-modal-form"
+      >
+        <span class="desctop-info">Оставить заявку</span>
+        <span class="mobile-info">Заявка</span>
+      </div>
+      <div class="right-side-container">
+        <div class="bottom-contacts">
+          <a
+            class="contact tel from-left-opacity-animation"
+            aria-label="Phone"
+            href="tel:+7006990257"
+            ><span class="number">+(700)-699-02-57</span
+            ><svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="477.156px"
+              height="477.156px"
+              viewbox="0 0 477.156 477.156"
+              style="enable-background: new 0 0 477.156 477.156"
+              xml:space="preserve"
+            >
+              <path
+                d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
+l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
+l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
+C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
+c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
+C474.946,420.878,480.571,397.035,475.009,380.316z"
+              ></path>
+            </svg> </a
+          >
+          <a
+            href="https://t.me/kyerasik"
+            title="Telegram"
+            aria-label="Telegram"
+            rel="nofollow noopener"
+            target="_blank"
+            class="from-left-opacity-animation messenger telegram"
+            ><svg
+              data-prefix="fab"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 448 512"
+            >
+              <path
+                d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+              ></path></svg
+          ></a>
+        </div>
+        <svg
+          aria-label="Открыть меню"
+          class="open-menu-btn modal-opener from-left-opacity-animation"
+          id="open-menu-btn"
+          data-modal-id="menu-modal"
+          viewbox="0 0 35 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="0"
+            y1="2"
+            x2="35"
+            y2="2"
+            stroke-width="4"
+            stroke-dasharray="35 8"
+          ></line>
+          <line
+            x1="0"
+            y1="15"
+            x2="35"
+            y2="15"
+            stroke-width="4"
+            stroke-dasharray="35 8"
+          ></line>
+          <line
+            x1="0"
+            y1="28"
+            x2="35"
+            y2="28"
+            stroke-width="4"
+            stroke-dasharray="35 8"
+          ></line>
+        </svg>
+        <ul id="menu-header-menu-ru" class="header-menu">
+          <li
+            id="menu-item-2355"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2355"
+          >
+            <a href="../studio/index.htm">Обо мне</a>
+          </li>
+          <li
+            id="menu-item-2354"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2354"
+          >
+            <a href="../portfolio/index.htm">Портфолио</a>
+          </li>
+          <li
+            id="menu-item-2352"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2352"
+          >
+            <a href="../services/index.htm">Услуги</a>
+          </li>
+          <li
+            id="menu-item-2353"
+            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-22 current_page_item menu-item-2353"
+          >
+            <a href="index.htm" aria-current="page">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="page-contacts" class="page">
+      <div class="block main-block" data-bg="light-gray">
+        <div class="content">
+          <div class="page-title">
+            <span class="string-width-animation onload-animation"
+              >Контакты</span
+            >
+          </div>
+          <div class="text onload-animation from-bottom-opacity-animation">
+            <div class="appeal">Звоните, пишите!</div>
+            <a
+              href=""
+              target="_blank"
+              rel="nofollow noopener"
+              class="address"
+            >
+              Алматы, Казахстан
+              
+            </a>
+            <div class="phones-container">
+              <div class="line">
+                <a class="tel" href="tel:+7006990257">+(700)-699-02-57</a>
+             
+                <a
+                  href="https://t.me/kyerasik"
+                  aria-label="Telegram"
+                  title="Telegram"
+                  class="messenger telegram"
+                  ><svg
+                    data-prefix="fab"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 448 512"
+                  >
+                    <path
+                      d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <div class="email-container">
+              <a class="email" href="mailto:infoMARS@gmail.com"
+                >infoMARS@gmail.com</a
+              >
+            </div>
+            <div class="order-btn scroll-to" data-target-selector=".footer">
+              Запрос на разработку
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </main>
+    <div
+      class="footer-container block animate-on-scroll animate-by-elements"
+      data-animation-duration="150"
+      data-animation-delay="500"
+      data-bg="black"
+    >
+      <footer class="footer content">
+        <div class="block-title block-animation-element">
+          Расскажите о вашем проекте
+        </div>
+        <div class="main-content">
+          <form
+            action=""
+            method="post"
+            class="request-form"
+            id="request-form"
+            novalidate=""
+          >
+            <input
+              type="hidden"
+              id="csrf-token"
+              name="csrf-token"
+              value="21f5971a14"
+            /><input type="hidden" name="_wp_http_referer" value="/contacts/" />
+            <div class="fields-container">
+              <label class="label block-animation-element">
+                <span class="input-container">
+                  <input type="text" name="name" />
+                </span>
+                <span class="placeholder-container">
+                  <span class="placeholder">Имя</span>
+                </span>
+              </label>
+              <label class="label block-animation-element">
+                <span class="input-container tel-input-container">
+                  <input type="tel" name="tel" maxlength="17" />
+                </span>
+                <span class="placeholder-container">
+                  <span class="placeholder">Телефон</span>
+                </span>
+              </label>
+              <label class="label block-animation-element">
+                <span class="input-container">
+                  <input type="email" name="email" required="" />
+                </span>
+                <span class="placeholder-container">
+                  <span class="placeholder">Email</span>
+                </span>
+              </label>
+              <label class="label message-label block-animation-element">
+                <span class="input-container">
+                  <textarea
+                    data-autoresize=""
+                    name="message"
+                    required=""
+                  ></textarea>
+                </span>
+                <span class="placeholder-container">
+                  <span class="placeholder">Сообщение</span>
+                </span>
+              </label>
+            </div>
+            <label style="display: none"
+              ><input
+                type="checkbox"
+                class="agree"
+                name="agree"
+                checked=""
+                value="1"
+              />Согласие на обработку персональных данных</label
+            >
+            <button
+              type="submit"
+              class="send-request-button button block-animation-element"
+            >
+              <span class="main-text">Отправить сообщение</span
+              ><span class="message-text" aria-hidden="true"
+                >Отправляется...</span
+              >
+            </button>
+            <div class="message message-success">
+              <div class="text">
+                Спасибо, ваш запрос отправлен. <br />мне свяжусь с вами в
+                ближайшее время.<br /><br />
+                <button type="button" class="button close-btn">
+                  Отправить еще запрос
+                </button>
+              </div>
+            </div>
+            <div class="message message-error">
+              <div class="text">
+                Ошибка, ваш запрос не отправлен. <br />Попробуйте позже или
+                позвоните мне:<br />
+                <a href="tel:+7006990257">+(700)-699-02-57</a><br /><br />
+                <button type="button" class="button close-btn">
+                  Закрыть окно
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="contacts">
+            <div class="email-container block-animation-element">
+              <div class="gray">
+                У вас есть готовое техническое задание? Отправьте его мне по
+                электронной почте:
+              </div>
+              <div class="contact-data-container">
+                <a class="email" href="mailto:infoMARS@gmail.com" rel="nofollow"
+                  >infoMARS@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="phone-container block-animation-element">
+              <div class="gray">
+                Хотите получить ответ максимально оперативно? Звоните, пишите:
+              </div>
+              <div class="contact-data-container">
+                <a href="tel:+7006990257" class="tel">+(700)-699-02-57</a>
+               
+                <a
+                  href="https://t.me/kyerasik"
+                  aria-label="Telegram"
+                  title="Telegram"
+                  rel="nofollow noopener"
+                  target="_blank"
+                  class="messenger telegram"
+                  ><svg
+                    data-prefix="fab"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewbox="0 0 448 512"
+                  >
+                    <path
+                      d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom block-animation-element">
+          <div class="copyright">
+            &copy; 2020 &mdash; 2023. C&nbsp;любовью, я MARS.
+            <br />P.&nbsp;S.&nbsp;Многие спрашивают, почему я прозвал себя
+            MARS. А&nbsp;вы&nbsp;догадались?
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal" id="menu-modal">
+      <nav class="window">
+      
+        <ul id="menu-main-menu-ru" class="main-menu">
+          <li
+            id="menu-item-29"
+            class="on-open-animation menu-item menu-item-type-post_type menu-item-object-page menu-item-29"
+          >
+            <a href="../studio/index.htm">Обо мне</a>
+          </li>
+          <li
+            id="menu-item-28"
+            class="on-open-animation menu-item menu-item-type-post_type menu-item-object-page menu-item-28"
+          >
+            <a href="../portfolio/index.htm">Портфолио</a>
+          </li>
+          <li
+            id="menu-item-26"
+            class="on-open-animation menu-item menu-item-type-post_type menu-item-object-page menu-item-26"
+          >
+            <a href="../services/index.htm">Услуги</a>
+          </li>
+          <li
+            id="menu-item-27"
+            class="on-open-animation menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-22 current_page_item menu-item-27"
+          >
+            <a href="index.htm" aria-current="page">Контакты</a>
+          </li>
+        </ul>
+        <a class="email on-open-animation" href="mailto:infoMARS@gmail.com"
+          ><span class="text-container">infoMARS@gmail.com</span></a
+        ><br />
+        <a class="tel on-open-animation" href="tel:+7006990257"
+          ><span class="text-container">+(700)-699-02-57</span></a
+        >
+        <div class="messengers on-open-animation">
+         
+          <a
+            href="https://t.me/kyerasik"
+            title="Telegram"
+            aria-label="Telegram"
+            rel="nofollow noopener"
+            target="_blank"
+            class="messenger telegram"
+            ><svg
+              data-prefix="fab"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 448 512"
+            >
+              <path
+                d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+              ></path></svg
+          ></a>
+        </div>
+      </nav>
+    </div>
+    <div class="modal" id="menu-modal-form">
+      <form
+        action=""
+        method="post"
+        class="request-form window"
+        id="modal-request-form"
+        novalidate=""
+      >
+        <input
+          type="hidden"
+          id="csrf-token"
+          name="csrf-token"
+          value="786036bd01"
+        /><input type="hidden" name="_wp_http_referer" value="/contacts/" />
+        <div class="fields-container">
+          <h3 class="menu-modal-form-title on-open-animation">
+            Оставить заявку
+          </h3>
+          <label class="label on-open-animation">
+            <span class="input-container">
+              <input type="text" name="name" />
+            </span>
+            <span class="placeholder-container">
+              <span class="placeholder">Имя</span>
+            </span>
+          </label>
+          <label class="label on-open-animation">
+            <span class="input-container tel-input-container">
+              <input type="tel" name="tel" maxlength="17" />
+            </span>
+            <span class="placeholder-container">
+              <span class="placeholder">Телефон</span>
+            </span>
+          </label>
+          <label class="label on-open-animation">
+            <span class="input-container">
+              <input type="email" name="email" required="" />
+            </span>
+            <span class="placeholder-container">
+              <span class="placeholder">Email</span>
+            </span>
+          </label>
+          <label class="label message-label on-open-animation">
+            <span class="input-container">
+              <textarea
+                data-autoresize=""
+                name="message"
+                required=""
+              ></textarea>
+            </span>
+            <span class="placeholder-container">
+              <span class="placeholder">Сообщение</span>
+            </span>
+          </label>
+        </div>
+        <label style="display: none"
+          ><input
+            type="checkbox"
+            class="agree"
+            name="agree"
+            checked=""
+            value="1"
+          />Согласие на обработку персональных данных</label
+        >
+        <button
+          type="submit"
+          class="send-request-button button on-open-animation"
+        >
+          <span class="main-text">Отправить сообщение</span
+          ><span class="message-text" aria-hidden="true">Отправляется...</span>
+        </button>
+        <div class="message message-success">
+          <div class="text">
+            Спасибо, ваш запрос отправлен. <br />мне свяжусь с вами в ближайшее
+            время.<br /><br />
+            <button type="button" class="button close-btn">
+              Отправить еще запрос
+            </button>
+          </div>
+        </div>
+        <div class="message message-error">
+          <div class="text">
+            Ошибка, ваш запрос не отправлен. <br />Попробуйте позже или
+            позвоните мне:<br />
+            <a href="tel:+7006990257">+(700)-699-02-57</a><br /><br />
+            <button type="button" class="button close-btn">Закрыть окно</button>
+          </div>
+        </div>
+        <div class="contacts">
+          <div
+            class="email-container block-animation-element on-open-animation"
+          >
+            <div class="gray">
+              У вас есть готовое техническое задание? Отправьте его мне по
+              электронной почте:
+            </div>
+            <div class="contact-data-container">
+              <a class="email" href="mailto:infoMARS@gmail.com" rel="nofollow"
+                >infoMARS@gmail.com</a
+              >
+            </div>
+          </div>
+          <div
+            class="phone-container block-animation-element on-open-animation"
+          >
+            <div class="gray">
+              Хотите получить ответ максимально оперативно? Звоните, пишите:
+            </div>
+            <div class="contact-data-container">
+              <a href="tel:+7006990257" class="tel">+(700)-699-02-57</a>
+           
+              <a
+                href="https://t.me/kyerasik"
+                aria-label="Telegram"
+                title="Telegram"
+                rel="nofollow noopener"
+                target="_blank"
+                class="messenger telegram"
+                ><svg
+                  data-prefix="fab"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 448 512"
+                >
+                  <path
+                    d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="../wp-content/themes/mart/js/min/common.js?1633521437"
+      id="bundle-js"
+    ></script>
+    <script
+      src="../wp-content/themes/mart/js/min/page-contacts.js?1578916828"
+      id="page-contacts-js"
+    ></script>
+   
+   
+    <div id="unload-screen"></div>
+  </body>
+</html>

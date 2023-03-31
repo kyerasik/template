@@ -1,0 +1,21 @@
+{
+  "short_name": "Mart",
+  "name": "Mart Studio",
+  "icons": [
+    {
+      "src": "/wp-content/themes/mart/images/favicons/favicon-196.png",
+      "type": "image/png",
+      "sizes": "196x196"
+    },
+    {
+      "src": "/wp-content/themes/mart/images/favicons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#1a1a1a",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#1a1a1a"
+}
